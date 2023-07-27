@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+		<script> /* inicio script */
+
+		/*
+		var numero1 = prompt('Digite um número: ')
+		var operacao = prompt('Digite a operação desejada (sem as aspas): "soma" ou "subtração"')
+		var numero2 = prompt('Digite outro número: ')
+		
+		function calc(num1, num2, operacao){
+
+		numero1 = parseFloat(numero1)
+		numero2 = parseFloat(numero2)
+
+		var resultado =0;
+
+		if (operacao == 'soma') {
+			resultado = (numero1 + numero2);
+		} 
+		if (operacao == 'subtração'){
+			resultado = (numero1 - numero2);
+		}
+		
+		return resultado;
+		}
+
+		//document.write('O resultado é: ' + resultado)
+		document.write('O resultado é: ' + calc(num1, num2, operacao));
+		*/
+		
+		var num1 = prompt('Digite um número: ')
+		var operacao = prompt('Digite a operação deseja (sem aspas): "soma" ou "subtração" ')
+		var num2 = prompt('Digite outro número: ')
+
+		num1 = parseFloat(num1)
+		num2 = parseFloat(num2)
+
+		function calculo(operacao, num1, num2) {
+
+		if (operacao === 'soma') {
+			var resultado = num1 + num2
+		} else {
+			var resultado = num1 - num2
+		}
+
+		return resultado
+		}
+
+		document.write('O resultado é: ' + calculo(operacao, num1, num2))
+
+		</script> <!--/ fim script-->
+
+	</head>
+
+	<body>
+	</body>
+
+</html>
