@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+
+		<script> /* inicio script */
+
+			var caracter
+
+			function onclickCor(amarelo, preto) {
+				document.getElementById('entrada').style.backgroundColor = amarelo
+				document.getElementById('entrada').style.color = preto
+				 caracter = document.getElementById('entrada').value
+			}
+
+			caracter  // atualização global da variavel 
+
+			function onblurNovaCor(vermelho, verde, branco) {
+
+				console.log(caracter)
+
+				var contCaracter = caracter.length
+
+				console.log(contCaracter)
+
+				if (contCaracter < 3) {
+					document.getElementById('entrada').style.backgroundColor = vermelho
+					document.getElementById('entrada').style.color = branco
+				} else {
+					document.getElementById('entrada').style.backgroundColor = verde
+					document.getElementById('entrada').style.color = branco
+				}
+			}
+
+		</script> <!--/ fim script-->
+
+	</head>
+
+	<body>
+
+		<input type="text" onkeyup="onclickCor('yellow', 'black')" onblur="onblurNovaCor('red', 'green', 'white')" placeholder="Digite aqui" id="entrada" style="width: 200px; height: 50px;">
+
+		</div>
+	</body>
+
+</html>
