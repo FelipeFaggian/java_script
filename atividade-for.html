@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+		<script> /* inicio script */
+
+
+			//exercicio 1
+			var lista_frutas = Array()
+
+			lista_frutas[0] = 'Banana'
+			lista_frutas[1] = 'Maçã'
+			lista_frutas[2] = 'Morango'
+			lista_frutas[3] = 'Uva'
+
+			document.write('<br /> 1) <br /> <br />')
+
+			
+			for (var y = 0; y < lista_frutas.length; y++) {
+				document.write(lista_frutas[y] + '<br />')
+			}
+
+			// exercicio 2
+			document.write('<hr /> <br />  2) <br /> <br />')
+
+			// laco exemplo for
+			document.write('Laço for <br /> <br />')
+			for (var y = 1; y <= 10; y++) {
+
+				for (var x = 1; x <= 10; x++) {
+				document.write(y + ' x ' + x + ' = ' + (y * x) + '<br />')
+				}
+
+				document.write('<hr />')
+			}
+
+			// laco atividade while
+			document.write('Laço while <br /> <br />')
+
+			var y = 1
+		
+			function whil() {
+				var x = 1
+				while (x <= 10) {
+					document.write(y + ' x ' + x + ' = ' + (y*x) + '<br />')
+
+					x++
+				}
+			}
+
+			while (y <= 10) {
+				whil()	
+				document.write('<br /> <br />')	
+				y++
+			}
+
+
+		</script> <!--/ fim script-->
+
+	</head>
+
+	<body>
+
+	</body>
+
+</html>
