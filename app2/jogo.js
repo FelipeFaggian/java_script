@@ -25,7 +25,7 @@ ajustaTamanhoPalcoJogo()
 	//criar o elemento html
 	var mosquito = document.createElement('img')
 	mosquito.src = 'imagens/mosquito.png'
-	mosquito.className = tamanhoAleatorio()
+	mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
 	mosquito.style.left = posicaoX + 'px'
 	// mosquito.style.left = (0-90) + 'px'
 	mosquito.style.top = posicaoY + 'px'
@@ -34,7 +34,8 @@ ajustaTamanhoPalcoJogo()
 
 	document.body.appendChild(mosquito)
 
-	console.log(tamanhoAleatorio())
+	// console.log(tamanhoAleatorio())
+	// console.log(ladoAleatorio())
 	}
 
 	function tamanhoAleatorio() {
@@ -52,4 +53,18 @@ ajustaTamanhoPalcoJogo()
 			return 'mosquito3'			
 
 		}
+	}
+
+	function ladoAleatorio() {
+		var classe = Math.floor(Math.random() * 2)
+		// console.log(classe)
+		switch(classe) {
+
+		case 0:
+			return 'ladoA'
+
+		case 1: 
+			return 'ladoB'			
+
+		}	
 	}
